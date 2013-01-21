@@ -30,9 +30,9 @@
 	$connectionOptions = array(
 	'driver' => 'pdo_mysql',
 	'host' => 'localhost',
-	'dbname' => 'maranona',
-	'user' => 'maranona',
-	'password' => 'password'
+	'dbname' => 'proiektukobd',
+	'user' => 'root',
+	'password' => ''
 	);
 	 
 	$em = \Doctrine\ORM\EntityManager::create($connectionOptions, $config);
