@@ -3,7 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>PHP proiektua</title>
-</head>
+<link rel="stylesheet" href="estiloproiektu.css" />
+</head>    
 <body>
 <?php
 include_once "lib/orm/EntityManagerFactory.php";
@@ -11,6 +12,7 @@ include_once "lib/orm/EntityManagerFactory.php";
         
         
         ?>
+    <div id="hasiera">
     <h1> Venta de vehiculos</h1>
     
     <p>identificarse:</p>
