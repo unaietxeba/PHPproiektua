@@ -12,24 +12,26 @@ include_once "lib/orm/EntityManagerFactory.php";
         
         
         ?>
+    <div id="contenedor">
     <div id="hasiera">
+        <div id="testua">    
     <h1> Venta de vehiculos</h1>
-    
-    <p>identificarse:</p>
+    <br/>
     <form action="egiaztatu.php" method="post">
             <p>
-            Sartu email-a
+            email
             <input type="." name="email" required> 
             </p>
             <p>
-            Sartu pasaitza
+            contraseña
             <input type="." name="pasahitza" required>
             </p>
             <input type="submit">
 		
-	</form></div>
+	</form></div></div>
 
     
+        </div>
 </body>
 </html>
         
