@@ -26,6 +26,8 @@ $pass=$_POST["pasahitza"];
             echo"pasaitza txarto sartu duzu zeren ez duzu hizkirik sartu";
         elseif(ctype_alpha($pass)==true)echo "Pasaitsa txarto sartu duzu zeren ez du zenbakirik";
         
+    
+        
     }
     
     

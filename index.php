@@ -28,7 +28,13 @@ include_once "lib/orm/EntityManagerFactory.php";
             </p>
             <input type="submit">
 		
-	</form></div></div>
+    </form></div></div>
+
+        
+            <div id="goi">
+                Lista de coches
+            </div>
+          
 
     
         </div>
