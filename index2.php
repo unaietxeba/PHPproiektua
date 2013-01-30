@@ -33,10 +33,15 @@ include_once "lib/orm/EntityManagerFactory.php";
         </div>
         <br/>
         <div id="coches">
-            este apartado ban deddicado a los cochesen venta
-            <?
-            $articulos = $em->getRepository('entities\coches')->findAll();
+            <?php
+            include_once('bista.php');
+            include_once('modelo.php');
+            
+            
+            
             ?>
+            
+            
         </div>
            
         

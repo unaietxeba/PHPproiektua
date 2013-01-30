@@ -7,8 +7,6 @@ $pass=$_POST["pasahitza"];
             echo "posta txarto zartu duzu zeren utzuneak daude<br/>";   
     }
     
-    
-    
     elseif ((strstr($posta,"@")==false)||(strstr($posta,".")==false)){
         echo "emaila ez duzu ongi sartu zeren ez dago ez punturik edo @ rik<br/>";
     }
@@ -25,15 +23,10 @@ $pass=$_POST["pasahitza"];
     elseif(ctype_alnum($pass)==true){
         if(ctype_digit($pass)==true)
             echo"pasaitza txarto sartu duzu zeren ez duzu hizkirik sartu";
-        elseif(ctype_alpha($pass)==true)echo "Pasaitsa txarto sartu duzu zeren ez du zenbakirik";
-        
-    
-        
+        elseif(ctype_alpha($pass)==true)echo "Pasaitsa txarto sartu duzu zeren ez du zenbakirik";     
     }
     
-    
-    require_once 'index2.php';     
-    
-    
-    
+    else{
+         require_once 'index2.php';
+        }
 ?>
