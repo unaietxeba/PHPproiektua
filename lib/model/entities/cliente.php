@@ -21,16 +21,34 @@ class cliente{
     }
     
     public function getcif(){
-    return $this->cif_cliente;
-    }
+        return $this->cif_cliente;
+        }
+        
+    public function setcif(){
+        $this->cif_cliente=$cif;
+        }            
+    
     public function getnombre(){
         return $this->nombre;
     }
+    public function setnombre(){
+        $this->nombre=$nom;
+        }
+        
     public function getapellido(){
         return $this->apellido;
     }
+    
+    public function setapellido(){
+        $this->apellido=$apel;
+        }
+        
     public function gettelefono(){
         return $this->telefono;
-    }    
+    }  
+    
+    public function settelefono(){
+        $this->telefono=$tel;
+        }
     }
 ?>

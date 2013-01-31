@@ -13,24 +13,44 @@ class coche{
     /** @Column(type="string",length=15) */
     private $caracteristicas;
     
-    public function __construct($cod,$mar,$modelo,$carac){
+    public function __construct($cod,$mar,$mod,$carac){
     $this->cod_coche=$cod;
     $this->marca=$mar;
-    $this->modelo=$moelo;
+    $this->modelo=$mod;
     $this->caracteristicas=$carac;
     }
     
     public function getcod(){
     return $this->cod_coche;
     }
+    
+    public function setcod(){
+        $this->cod_coche=$cod;
+        }
+        
     public function getmarca(){
         return $this->marca;
     }
+    
+    public function setmarca(){
+        $this->marca=$mar;
+        }
+        
+        
     public function getmodelo(){
         return $this->modelo;
     }
+    
+    public function setmodelo(){
+        $this->modelo=mod;
+        }
+        
     public function getcarac(){
         return $this->caracteristicas;
-    }    
+    } 
+    
+    public function setcarac(){
+        $this->caracteristicas=$carac;
+        }
     }
 ?>

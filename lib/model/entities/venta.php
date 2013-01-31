@@ -20,11 +20,25 @@ class cliente{
     public function getnum_venta(){
     return $this->num_venta;
     }
+    
+    public function setnum_venta(){
+        $this->num_venta=$ven;
+        }
+        
     public function getcod_coche(){
         return $this->cod_coche;
     }
+    
+    public function setcod_coche(){
+        $this->cod_coche=$cod;
+        }
+        
     public function getcif_cliente(){
         return $this->cif_cliente;
-    }    
+    }  
+    
+    public function setcif_cliente(){
+        $this->cif_cliente=$cif;
+        }
     }
 ?>
