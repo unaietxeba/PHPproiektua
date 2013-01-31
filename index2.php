@@ -6,7 +6,7 @@
 </head>    
 <body>
 <?php
-include_once "lib/orm/EntityManagerFactory.php";
+        include_once "lib/orm/EntityManagerFactory.php";
         $em = EntityManagerFactory::createEntityManager();
         
         
