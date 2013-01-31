@@ -31,10 +31,7 @@ include_once "lib/orm/EntityManagerFactory.php";
         <br/>
         <div id="coches">
             <?php
-            include_once('bista.php');
-            include_once('modelo.php');
-            
-            
+                        
             
             ?>
             

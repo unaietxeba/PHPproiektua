@@ -26,7 +26,7 @@ $pass=$_POST["pasahitza"];
         elseif(ctype_alpha($pass)==true)echo "Pasaitsa txarto sartu duzu zeren ez du zenbakirik";     
     }
     
-    else{
+    
          require_once 'index2.php';
-        }
+        
 ?>
