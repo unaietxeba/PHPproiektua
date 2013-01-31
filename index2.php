@@ -24,9 +24,6 @@ include_once "lib/orm/EntityManagerFactory.php";
                 <a href="#nuevo">coche nuevo</a>
                 </li>
                 <li>
-                <a href="#piezas">Peticion de piezas</a>
-                </li>
-                <li>
                 <a href="#ventas">Ver las ventas</a>
                 </li>
             </ul>
