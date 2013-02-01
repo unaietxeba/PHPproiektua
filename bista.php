@@ -1,20 +1,21 @@
 <?php
 class vista{
- public function sacarcoche()
+ public function sacarcoche($x, $p, $c)
 	{
-		echo "Coche: ";
+		echo "$p $x equipacion: $c<br /><br />";
 	}  
-public function vercoche($marca, $modelo, $caracteristicas)
+public function ponercoches()
 	{
-		echo "$marca $modelo caracteristicas: $caracteristicas";
+		echo '<p id="cochestitulo">Coches disponibles para venta:<br /><br /></p>';
 	}
 public function lineablanco()
 	{
 		echo "</br>";
 	}
-public function sacarcliente()
+public function sacarcliente($x)
 	{
-		echo "Cliente: ";
+		echo "Cliente: $x
+                    <br />";
 	}
 public function vercleinte($nomclien, $apellido, $telefono)
 	{

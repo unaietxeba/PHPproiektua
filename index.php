@@ -24,7 +24,7 @@ include_once "lib/orm/EntityManagerFactory.php";
             </p>
             <p>
             contraseña
-            <input type="." name="pasahitza" required>
+            <input type="password" name="pasahitza" required>
             </p>
             <input type="submit">
 		

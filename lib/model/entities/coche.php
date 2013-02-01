@@ -21,7 +21,7 @@ class coche{
     }
     
     public function getcod(){
-    return $this->cod_coche;
+        return $this->cod_coche;
     }
     
     public function setcod(){
@@ -31,6 +31,11 @@ class coche{
     public function getmarca(){
         return $this->marca;
     }
+    
+    public function getcoche(){
+        return $this->marca;
+    }
+    
     
     public function setmarca(){
         $this->marca=$mar;
