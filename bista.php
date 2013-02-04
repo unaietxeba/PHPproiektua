@@ -6,7 +6,7 @@ class vista{
 	}  
 public function ponercoches()
 	{
-		echo '<p id="cochestitulo">Coches disponibles para venta:<br /><br /></p>';
+		echo '<h1>Coches disponibles para venta:<br /><br /></h1>';
 	}
 public function lineablanco()
 	{
@@ -17,9 +17,9 @@ public function sacarcliente($x)
 		echo "Cliente: $x
                     <br />";
 	}
-public function vercleinte($nomclien, $apellido, $telefono)
+public function vercleinte($n, $a, $t)
 	{
-		echo "Nombre: $nomclien Apellido: $apellido telefono:$telefono";
+		echo "Cliente: $n $a telefono: $t";
 	}	
 }
 ?>

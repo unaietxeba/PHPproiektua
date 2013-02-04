@@ -33,7 +33,23 @@
         </div>
         <br/>
         </div>
+    <div id="coches">
+    <!--Amen zartu kodigoa barrizena!!!!!!!!! -->
+    <h1>VentaNueva</h1>
+    <?php
+        $x = $em->getRepository('entities\venta')->findAll(); 
+        echo "Ventas de vehiculos";
+        for($k=0;$k<count($x);$k++){
+            $era=$x[$k];                    
+            $bis->sacarcoche($era->getmodelo(),$era->getmarca(), $era->getcarac());
+            $bis->vercleinte($era->getnombre(), $era->getapellido(), $era->gettelefono());
+            echo "<hr/>";
+            }
+    ?>
+    
+    </div>
            
         
 </body>
 </html>
+
