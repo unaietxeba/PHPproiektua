@@ -38,7 +38,7 @@
      <form name="form1" method="post" action="">
     <h1>Coche nuevo</h1>
     <div id="tabla1">
-    <table width="100%" border="2" cellpadding="4">
+    <table width="100%" border="0" cellpadding="4">
     <tr> 
         <td class="campocoche">cod_coche*:</td>
         <td> <input name="cod_coche" type="text" id="cod_coche" size="50" value=""> </td>
@@ -46,7 +46,7 @@
     <br/>
     <tr> 
         <td class="campocoche">marca*:</td>
-        <td> <input name="marcca" type="text" id="marcca" size="50" value=""> </td>
+        <td> <input name="marca" type="text" id="marca" size="50" value=""> </td>
     </tr>
     <br/>
     <tr> 
@@ -66,6 +66,19 @@
     </tr>
     </table>
     </div>
+    <?php
+            error_reporting(0);
+    if(isset($_POST)){
+    $c1=new entities\coche($_POST['cod_coche'],$_POST['marca'],$_POST['modelo'],  $_POST['carac']);
+    try{
+        $em->persist($c1);
+       }catch(Exception $e){
+                        //echo("<br>$e->getMessage()<br>");
+                      }
+    $em->flush();
+    }
+    ?>
+    
   </form>
   
  </div>       
