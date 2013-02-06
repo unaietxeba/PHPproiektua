@@ -35,9 +35,15 @@
         </div>
     <div id="coches">
     <!--Amen zartu kodigoa barrizena!!!!!!!!! -->
-     <form name="form1" method="post" action="">
-    <h1>Coche nuevo</h1>
     <div id="tabla1">
+        <?php
+            $bis->formhasi("form1", "post", "#")
+        
+        ?>
+    </div>
+    
+    <h1>Coche nuevo</h1>
+    
     <table width="100%" border="0" cellpadding="4">
     <tr> 
         <td class="campocoche">cod_coche*:</td>

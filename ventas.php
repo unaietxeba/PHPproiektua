@@ -35,7 +35,28 @@
         </div>
     <div id="coches">
     <!--Amen zartu kodigoa barrizena!!!!!!!!! -->
-    <h1>VentaNueva</h1>
+                    
+        <?php
+        $bis->ventajarri();
+        
+        $bis->formhasi();
+        $bis->selecthasi("cars");
+        
+        $x=0;
+        $k=0;
+        $x = $em->getRepository('entities\coche')->findAll(); 
+        for($k=0;$k<count($x);$k++){
+            $era=$x[$k];                    
+            $bis->option($era->getmarca());
+            }
+        
+        $bis->selectamaitu();
+        $bis->formamaitu();
+            
+            ?>
+    
+        </select>
+    </form>
     
     
     </div>

@@ -8,18 +8,33 @@ public function ponercoches()
 	{
 		echo '<h1>Coches disponibles para venta:<br /><br /></h1>';
 	}
-public function lineablanco()
+public function selecthasi($name)
 	{
-		echo "</br>";
-	}
-public function sacarcliente($x)
+		echo "<select name='$name'>";
+        }
+public function selectamaitu()
 	{
-		echo "Cliente: $x
-                    <br />";
-	}
-public function vercleinte($n, $a, $t)
+		echo "</select>";
+        }
+public function formhasi($n, $met, $ac)
 	{
-		echo "Cliente: $n $a telefono: $t";
-	}	
+		echo "<form name='$n' method='$met' action='$ac'>";
+        }
+public function formamaitu()
+	{
+		echo "</form>";
+        }
+
+public function ventajarri() {
+        echo "<h1>Venta Nueva</h1>";    
+    }
+
+
+	
+
+public function option($b){
+            echo "<option value='$b'>".$b."</option>";
+        }
 }
+
 ?>
