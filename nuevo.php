@@ -32,58 +32,30 @@
             </ul>
         </div>
         <br/>
-        </div>
+        
     <div id="coches">
     <!--Amen zartu kodigoa barrizena!!!!!!!!! -->
-    <div id="tabla1">
+    
         <?php
-            $bis->formhasi("form1", "post", "#")
-        
-        ?>
-    </div>
-    
-    <h1>Coche nuevo</h1>
-    
-    <table width="100%" border="0" cellpadding="4">
-    <tr> 
-        <td class="campocoche">cod_coche*:</td>
-        <td> <input name="cod_coche" type="text" id="cod_coche" size="50" value=""> </td>
-    </tr> 
-    <br/>
-    <tr> 
-        <td class="campocoche">marca*:</td>
-        <td> <input name="marca" type="text" id="marca" size="50" value=""> </td>
-    </tr>
-    <br/>
-    <tr> 
-        <td class="campocoche">modelo*:</td>
-        <td> <input name="modelo" type="text" id="modelo" size="50" value=""> </td>
-    </tr>
-    <br/>
-    <tr> 
-        <td class="campocoche">caracteristicas*:</td>
-        <td> <input name="carac" type="text" id="carac" size="50" value=""> </td>
-    </tr>
-    <br/>
-    
-    <tr align="center"> 
-        <td colspan="2" class="camporegistro"><input type="submit" name="botEnviar" value="Enviar" id="botEnviar"> 
-        <input type="reset" name="botRestablecer" value="Restablecer" id="botRestablecer2"></td>
-    </tr>
-    </table>
-    </div>
-    <?php
+            $bis->formhasi("form1", "POST", "#");            
+            $bis->ponercohenuevo();
+            $bis->input("cod_coche*: ", "cod_coche", "text", "cod_coche", "50", "");
+            $bis->input("marca*: ", "marca", "text", "marca", "50", "");
+            $bis->input("modelo*: ", "modelo", "text", "modelo", "50", "");
+            $bis->input("caracteristicas*: ", "carac", "text", "carac", "50", "");
+            $bis->botoia();        
             error_reporting(0);
-    if(isset($_POST)){
-    $c1=new entities\coche($_POST['cod_coche'],$_POST['marca'],$_POST['modelo'],  $_POST['carac']);
-    try{
-        $em->persist($c1);
-       }catch(Exception $e){
-                        //echo("<br>$e->getMessage()<br>");
-                      }
-    $em->flush();
-    }
-    ?>
+            if(isset($_POST)){
+            $c1=new entities\coche($_POST['cod_coche'],$_POST['marca'],$_POST['modelo'],  $_POST['carac']);
+            try{
+                $em->persist($c1);
+               }catch(Exception $e){
+                                //echo("<br>$e->getMessage()<br>");
+                              }
+            $em->flush();
+            }
+            ?>
+    </div>
     
   </form>
   

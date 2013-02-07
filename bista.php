@@ -29,12 +29,35 @@ public function ventajarri() {
         echo "<h1>Venta Nueva</h1>";    
     }
 
-
-	
-
-public function option($b){
-            echo "<option value='$b'>".$b."</option>";
-        }
+public function input($mar, $na, $ty, $id, $siz, $val) {
+        echo "$mar <input name='$na' type='$ty' id='$id' size='$siz' value='$val'><br/>";    
 }
 
+public function ponercohenuevo() {
+        echo "<h1>Coche nuevo</h1>";
+}
+	
+public function option($b, $name){
+            echo "<option value='$b' name='$name'>".$b."</option>";
+        }
+        
+public function botoia() {
+           echo '<input type="submit" name="botEnviar" value="Enviar" id="botEnviar">'; 
+           echo '<input type="reset" name="botRestablecer" value="Restablecer" id="botRestablecer2"></td>';
+           echo "</tr>";
+        }
+
+public function saltodelinea(){
+            echo '<br/>';
+}
+
+public function botoiventa() {
+           echo '<br/><input type="submit" name="botEnviar" value="Erosketa egin" id="botEnviar">'; 
+           
+        }
+
+            
+            
+}            
 ?>
+

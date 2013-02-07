@@ -3,7 +3,7 @@ namespace entities;
 /** @MappedSuperclass */
 class cliente{
     /** @Column(type="string")
-    * @id
+    * @id 
     */
     private $cif_cliente;
     /** @Column(type="string",length=15) */

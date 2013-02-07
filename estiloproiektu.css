@@ -64,8 +64,9 @@ body{
 #coches{
     background-color: #FFFFFF;
     font-size: 18px;
-    padding: 10px 40px 40px;
+    padding: 18px 40px 40px;
     width: 925px;
+    overflow: auto;
 }
 
 h1{
@@ -76,6 +77,18 @@ h1{
 }
 #tabla1{
     margin-top: -70px;
+}
+input{
+    margin:5px;
+}
+
+#metclien{
+    float:right;
+}
+
+#ponercoche{
+    float: left;
+    margin: 30px;
 }
 
 
