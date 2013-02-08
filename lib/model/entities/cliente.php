@@ -1,6 +1,6 @@
 <?php
 namespace entities;
-/** @MappedSuperclass */
+/** @Entity @table(name="cliente") */
 class cliente{
     /** @Column(type="string")
     * @id 

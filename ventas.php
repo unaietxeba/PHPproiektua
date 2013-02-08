@@ -45,8 +45,6 @@
         $bis->formhasi("form1", "POST", "#");
         $bis->selecthasi("cars");
         
-        $x=0;
-        $k=0;
         $x = $em->getRepository('entities\coche')->findAll(); 
         for($k=0;$k<count($x);$k++){
             $era=$x[$k];                    
@@ -65,8 +63,8 @@
         $bis->input("telefono*: ", "telefono", "text", "telefono", "50", "");
             
         $bis->botoiventa();
-        $bis->formamaitu();
-        error_reporting(0);
+        
+        //error_reporting(0);
             if(isset($_POST)){
             $c1=new entities\venta($_POST['cars'],$_POST['cif_cliente']);
             $c2=new entities\cliente($_POST['cif_cliente'],$_POST['nombre'],$_POST['apellido'],$_POST['telefono']);
@@ -76,9 +74,18 @@
                }catch(Exception $e){
 //                               echo($e->getMessage());
                               }
-            $em->flush();
-            }    
-            ?>
+            
+             $em->flush();
+            }
+            $M=$_POST['cars'];
+            echo $M;
+            $b=$em->getRepository('entities\coche')->findoneby(array('cod_coche'=>$M));
+            echo 
+            $em->remove($b);
+            
+           $bis->formamaitu();
+            ?> 
+            
     
        
     
