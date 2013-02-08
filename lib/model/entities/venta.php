@@ -3,8 +3,9 @@ namespace entities;
 
 /** @Entity @table(name="venta") */
 class venta{
-    /** @Column(type="string")
-    * @id @generatedValue(strategy="AUTO")
+    /** @id 
+     * @GeneratedValue(strategy="AUTO")
+     * @Column(name="num_venta",type="integer")
     */
     private $num_venta;
     /** @Column(type="string",length=15) */

@@ -64,7 +64,7 @@
             
         $bis->botoiventa();
         
-        //error_reporting(0);
+        error_reporting(0);
             if(isset($_POST)){
             $c1=new entities\venta($_POST['cars'],$_POST['cif_cliente']);
             $c2=new entities\cliente($_POST['cif_cliente'],$_POST['nombre'],$_POST['apellido'],$_POST['telefono']);
@@ -75,15 +75,14 @@
 //                               echo($e->getMessage());
                               }
             
-             $em->flush();
+             
             }
             $M=$_POST['cars'];
-            echo $M;
             $b=$em->getRepository('entities\coche')->findoneby(array('cod_coche'=>$M));
-            echo 
             $em->remove($b);
-            
-           $bis->formamaitu();
+            $em->flush();
+            $bis->formamaitu();
+            header('Location: ventas.php');
             ?> 
             
     

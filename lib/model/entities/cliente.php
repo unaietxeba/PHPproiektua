@@ -2,7 +2,7 @@
 namespace entities;
 /** @Entity @table(name="cliente") */
 class cliente{
-    /** @Column(type="string")
+    /** @Column(type="integer")
     * @id 
     */
     private $cif_cliente;

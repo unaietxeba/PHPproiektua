@@ -2,7 +2,7 @@
 namespace entities;
 /** @Entity @table(name="coche") */
 class coche{
-    /** @Column(type="string")
+    /** @Column(type="integer")
     * @id
     */
     private $cod_coche;
