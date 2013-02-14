@@ -4,6 +4,8 @@ namespace entities;
 class cliente{
     /** @Column(type="integer")
     * @id 
+     // @OneToMany (targetEntity="venta",mappedBy="cliente" )
+     // @JoinColumn(name="cif_cliente", referencedColumnName="cif_cliente")
     */
     private $cif_cliente;
     /** @Column(type="string",length=15) */
@@ -12,12 +14,15 @@ class cliente{
     private $apellido;
     /** @Column(type="string",length=15) */
     private $telefono;
+    /** @OneToMany (targetEntity="venta",mappedBy="cliente" )*/
+    private $ventas;
     
     public function __construct($cif,$nom,$apel,$tel){
     $this->cif_cliente=$cif;
     $this->nombre=$nom;
     $this->apellido=$apel;
     $this->telefono=$tel;
+    $this->ventas=new \Doctrine\Common\Collections\ArrayCollection();
     }
     
     public function getcif(){

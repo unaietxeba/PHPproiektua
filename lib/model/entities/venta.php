@@ -8,15 +8,19 @@ class venta{
      * @Column(name="num_venta",type="integer")
     */
     private $num_venta;
-    /** @Column(type="string",length=15) */
-    private $cod_coche;
-    /** @Column(type="string",length=15) */
-    private $cif_cliente;
+    /** @ManyToOne(targetEntity="coche", inversedBy="ventas")
+     * @JoinColumn(name="cod_coche", referencedColumnName="cod_coche")
+     */
+    private $coche;
+    /** @ManyToOne(targetEntity="cliente", inversedBy="ventas")
+     * @JoinColumn(name="cif_cliente", referencedColumnName="cif_cliente")
+     */
+    private $cliente;
     
-    public function __construct($cod,$cif){
+    public function __construct($coc,$cli){
     
-    $this->cod_coche=$cod;
-    $this->cif_cliente=$cif;
+    $this->coche=$coc;
+    $this->cliente=$cli;
     }
     
     public function getnum_venta(){
@@ -27,20 +31,20 @@ class venta{
         $this->num_venta=$ven;
         }
         
-    public function getcod_coche(){
-        return $this->cod_coche;
+    public function getcoche(){
+        return $this->coche;
     }
     
-    public function setcod_coche($cod){
-        $this->cod_coche=$cod;
+    public function setcoche($coc){
+        $this->coche=$coc;
         }
         
-    public function getcif_cliente(){
-        return $this->cif_cliente;
+    public function getcliente(){
+        return $this->cliente;
     }  
     
-    public function setcif_cliente($cif){
-        $this->cif_cliente=$cif;
+    public function setcliente($cli){
+        $this->cliente=$cli;
         }
     }
 ?>

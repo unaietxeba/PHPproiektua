@@ -64,18 +64,24 @@
             
         $bis->botoiventa();
         
-        error_reporting(0);
+        //error_reporting(0);
             if(isset($_POST)){
-            $c1=new entities\venta($_POST['cars'],$_POST['cif_cliente']);
             $c2=new entities\cliente($_POST['cif_cliente'],$_POST['nombre'],$_POST['apellido'],$_POST['telefono']);
             try{
-                $em->persist($c1);
+                $client=$c2;
                 $em->persist($c2); 
                }catch(Exception $e){
-//                               echo($e->getMessage());
+                               //echo($e->getMessage());
+                              }                              
                               }
             
-             
+            if(isset($_POST)){
+            $v1=new entities\venta($era,$client);
+             try{
+                $em->persist($v1); 
+               }catch(Exception $e){
+                               //echo($e->getMessage());
+                              }
             }
             $M=$_POST['cars'];
             $b=$em->getRepository('entities\coche')->findoneby(array('cod_coche'=>$M));

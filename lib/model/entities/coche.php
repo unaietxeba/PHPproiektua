@@ -12,12 +12,16 @@ class coche{
     private $modelo;
     /** @Column(type="string",length=15) */
     private $caracteristicas;
+    /** @OneToMany (targetEntity="venta",mappedBy="coches" )*/
+    private $ventas;
     
     public function __construct($cod,$mar,$mod,$carac){
     $this->cod_coche=$cod;
     $this->marca=$mar;
     $this->modelo=$mod;
     $this->caracteristicas=$carac;
+    $this->ventas=new \Doctrine\Common\Collections\ArrayCollection();
+    
     }
     
     public function getcod(){
