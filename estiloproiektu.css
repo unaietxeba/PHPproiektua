@@ -12,7 +12,7 @@ body{
 
 #hasiera{  
     background-color: #FFFFFF;
-    color: #FF0033;
+    color:#000000;
     font-family: monospace;
     font-weight: bold;
     margin: auto;
@@ -20,6 +20,9 @@ body{
 }
 #testua{
     opacity: 0.5;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 #goi{

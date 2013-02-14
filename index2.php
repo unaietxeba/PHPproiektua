@@ -34,7 +34,7 @@
         <br/>
         <div id="ongietorri">
         <?php
-        echo "Ongi etorri ". $_SESSION['posta'];
+        echo "Bienvenido ". $_SESSION['posta'];
         session_destroy();
         ?>
         </div>

@@ -58,12 +58,5 @@ class coche{
         $this->caracteristicas=$carac;
         }
     
-//    public function anadircoche($cod, $mar, $mode,$carac){
-//        $this->cod_coche=$cod;
-//        $this->marca=$mar;
-//        $this->modelo=$mode;
-//        $this->caracteristicas=$carac;        
-//        }
-    
     }
 ?>
