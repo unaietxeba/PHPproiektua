@@ -25,6 +25,7 @@ $i=0;
         else{$p=1;}   
                 
         if($i==1 && $p==1){
+            $_SESSION['posta']= $posta;
             require_once 'index2.php';
-        }        
+        } 
 ?>
