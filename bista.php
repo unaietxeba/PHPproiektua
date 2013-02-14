@@ -37,8 +37,8 @@ public function ponercohenuevo() {
         echo "<h1>Coche nuevo</h1>";
 }
 	
-public function option($b, $name){
-            echo "<option value='$b' name='$name'>".$b."</option>";
+public function option($b, $name, $modelo){
+            echo "<option value='$b' name='$name'>".$name.' '.$modelo."</option>";
         }
         
 public function botoia() {

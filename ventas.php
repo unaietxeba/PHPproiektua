@@ -48,7 +48,7 @@
         $x = $em->getRepository('entities\coche')->findAll(); 
         for($k=0;$k<count($x);$k++){
             $era=$x[$k];                    
-            $bis->option($era->getcod(),$era->getcod());
+            $bis->option($era->getcod(),$era->getmarca(),$era->getmodelo());
             }
         $bis->selectamaitu();
         ?>
