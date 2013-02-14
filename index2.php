@@ -38,6 +38,7 @@
         session_destroy();
         ?>
         </div>
+    </div>
            
         
 </body>
