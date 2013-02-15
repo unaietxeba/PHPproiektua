@@ -12,9 +12,10 @@ class venta{
      * @JoinColumn(name="cod_coche", referencedColumnName="cod_coche")
      */
     private $coche;
+    
     /** @ManyToOne(targetEntity="cliente", inversedBy="ventas")
      * @JoinColumn(name="cif_cliente", referencedColumnName="cif_cliente")
-     */
+     */    
     private $cliente;
     
     public function __construct($coc,$cli){

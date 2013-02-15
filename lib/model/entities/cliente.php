@@ -4,8 +4,8 @@ namespace entities;
 class cliente{
     /** @Column(type="integer")
     * @id 
-     // @OneToMany (targetEntity="venta",mappedBy="cliente" )
-     // @JoinColumn(name="cif_cliente", referencedColumnName="cif_cliente")
+    * @OneToMany (targetEntity="venta",mappedBy="cliente" )
+  * @JoinColumn(name="cif_cliente", referencedColumnName="cif_cliente")
     */
     private $cif_cliente;
     /** @Column(type="string",length=15) */

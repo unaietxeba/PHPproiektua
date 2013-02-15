@@ -38,7 +38,7 @@ public function ponercohenuevo() {
 }
 	
 public function option($b, $name, $modelo){
-            echo "<option value='$b' name='$name'>".$name.' '.$modelo."</option>";
+            echo "<option value='$b' name='cars'>".$name.' '.$modelo."</option>";
         }
         
 public function botoia() {

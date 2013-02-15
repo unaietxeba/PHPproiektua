@@ -1,0 +1,9 @@
+
+---------- Venta de coches ----------
+cliente: 2222222222222222
+Nombre: 22
+apellido: 22
+telefono: 22
+coche: aston martin as
+
+

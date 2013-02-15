@@ -28,7 +28,7 @@ class coche{
         return $this->cod_coche;
     }
     
-    public function setcod(){
+    public function setcod($cod){
         $this->cod_coche=$cod;
         }
         
@@ -41,7 +41,7 @@ class coche{
     }
     
     
-    public function setmarca(){
+    public function setmarca($mar){
         $this->marca=$mar;
         }
         
@@ -50,15 +50,15 @@ class coche{
         return $this->modelo;
     }
     
-    public function setmodelo(){
-        $this->modelo=mod;
+    public function setmodelo($mod){
+        $this->modelo=$mod;
         }
         
     public function getcarac(){
         return $this->caracteristicas;
     } 
     
-    public function setcarac(){
+    public function setcarac($carac){
         $this->caracteristicas=$carac;
         }
     
