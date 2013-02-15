@@ -65,7 +65,7 @@
             
         $bis->botoiventa();
         
-        //error_reporting(0);
+        error_reporting(0);
             if(isset($_POST)){
                
             $c2=new entities\cliente($_POST['cif_cliente'],$_POST['nombre'],$_POST['apellido'],$_POST['telefono']);
