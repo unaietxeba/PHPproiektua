@@ -88,9 +88,16 @@
             }
             $em->flush();
             $M=intval($_POST['cars']);
-            $b=$em->getRepository('entities\coche')->findoneby(array('cod_coche'=>$M));
+            $b="(VENDIDO)".$em->getRepository('entities\coche')->findoneby(array('cod_coche'=>$M))."(VENDIDO)";
             //$em->remove($b);
             //$em->flush();
+            $c1=new entities\coche("(VENDIDO)".$b);
+             try{
+                $em->persist($c1); 
+               }catch(Exception $e){
+                               //echo($e->getMessage());
+                              }
+            $em->flush();
             
             
             $crear_archivo_ventas = fopen("ventas.txt","w");
