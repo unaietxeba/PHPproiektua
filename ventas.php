@@ -97,10 +97,10 @@
                }catch(Exception $e){
                                //echo($e->getMessage());
                               }
-            $em->flush();
+            $em->flush();    
             
             
-            $crear_archivo_ventas = fopen("ventas.txt","w");
+            $crear_archivo_ventas = fopen("ventas.txt","r+ ");
             fwrite($crear_archivo_ventas, PHP_EOL."---------- Venta de coches ----------" . PHP_EOL."cliente: ".$_POST['cif_cliente'].PHP_EOL."Nombre: ".$_POST['nombre'].PHP_EOL."apellido: ".$_POST['apellido'].PHP_EOL."telefono: ".$_POST['telefono'].PHP_EOL."coche: ".$era->getmarca()." ".$era->getmodelo().PHP_EOL.PHP_EOL.PHP_EOL);
             fclose($crear_archivo_ventas);
             $bis->formamaitu();
