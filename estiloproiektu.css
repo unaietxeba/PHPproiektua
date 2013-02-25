@@ -1,3 +1,7 @@
+body{
+    background: #666666;
+}
+
 #contenedor{
     width: 1024px;
     height: 507px;    
@@ -28,5 +32,10 @@
     padding-left: 20px;
     padding-top: 20px;
     width: 500px;
+}
+
+#titulo{
+    color:#ffffff;
+    text-align: center;
 }
 

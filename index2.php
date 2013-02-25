@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>PHP proiektua</title>
-<link rel="stylesheet" href="estiloindex2.css" />
+<link rel="stylesheet" href="estiloproiektu.css" />
 </head>    
 <body>
 <?php
