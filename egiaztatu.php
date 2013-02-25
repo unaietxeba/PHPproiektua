@@ -1,4 +1,5 @@
 <?php
+session_start();
 $posta=$_POST["email"];
 $pass=$_POST["pasahitza"];
 //    email    
@@ -31,7 +32,7 @@ $pass=$_POST["pasahitza"];
     }
     
     
-        
+    require_once 'index2.php';     
     
     
     
