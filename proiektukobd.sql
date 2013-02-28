@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 22-01-2013 a las 14:44:55
+-- Tiempo de generación: 28-02-2013 a las 10:05:52
 -- Versión del servidor: 5.5.25a
 -- Versión de PHP: 5.4.4
 
@@ -47,6 +47,20 @@ CREATE TABLE IF NOT EXISTS `coche` (
   `caracteristicas` varchar(100) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`cod_coche`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `piezas`
+--
+
+CREATE TABLE IF NOT EXISTS `piezas` (
+  `num_pedido` int(11) NOT NULL,
+  `ref_pieza` int(11) NOT NULL,
+  `cantidad` int(11) NOT NULL,
+  `precio` int(11) NOT NULL,
+  PRIMARY KEY (`num_pedido`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 

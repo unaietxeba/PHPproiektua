@@ -11,8 +11,21 @@
     <div id="contenedor1">
         <div id="titulo">    
             <h1>Lista de coches</h1>
-        </div>    
-        
+        </div>  
+        <div id="menu">
+            <ul id="menu">
+                <li>
+                <a href="#coches">Listado de coches</a>
+                </li>
+                <li>
+                <a href="#nuevo">coche nuevo</a>
+                </li>
+                <li>
+                <a href="#piezas">Peticion de piezas</a>
+                </li>
+            </ul>
+        </div>
+            
     </div>
            
         
