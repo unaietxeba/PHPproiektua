@@ -56,6 +56,13 @@ body{
     text-decoration:  none;
 }
 #bentmenu{
-     margin-left: 277px;
+     margin: auto;
+    overflow: auto;
+    width: 600px;
 }
+
+#coches{
+    
+}
+
 

@@ -23,7 +23,14 @@
                 <li>
                 <a href="#piezas">Peticion de piezas</a>
                 </li>
+                <li>
+                <a href="#ventas">Ver las ventas</a>
+                </li>
             </ul>
+        </div>
+        <br/>
+        <div id="coches">
+            este apartado ban deddicado a los cochesen venta
         </div>
             
     </div>
