@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 28-02-2013 a las 10:05:52
+-- Tiempo de generación: 01-03-2013 a las 12:15:37
 -- Versión del servidor: 5.5.25a
 -- Versión de PHP: 5.4.4
 
@@ -34,6 +34,18 @@ CREATE TABLE IF NOT EXISTS `cliente` (
   PRIMARY KEY (`cif_cliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- Volcado de datos para la tabla `cliente`
+--
+
+INSERT INTO `cliente` (`cif_cliente`, `nombre`, `apellido`, `telefono`) VALUES
+(13565946, 'javier', 'bañado', 2147483647),
+(223666666, 'antonio ', 'ortuño', 666666666),
+(368549624, 'Maria', 'domingez', 956854721),
+(555555555, 'javier', 'bañado', 666666666),
+(654892156, 'Rita', 'Madariaga', 946258795),
+(1646518169, 'antonio', 'ortuño', 51981618);
+
 -- --------------------------------------------------------
 
 --
@@ -46,7 +58,17 @@ CREATE TABLE IF NOT EXISTS `coche` (
   `modelo` varchar(20) COLLATE utf8_bin NOT NULL,
   `caracteristicas` varchar(100) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`cod_coche`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2147483647 ;
+
+--
+-- Volcado de datos para la tabla `coche`
+--
+
+INSERT INTO `coche` (`cod_coche`, `marca`, `modelo`, `caracteristicas`) VALUES
+(362458752, 'Fiat', 'Stylo', 'do todo'),
+(555555555, 'Renault', 'Megane', 'full equipe'),
+(635246854, 'Ford', 'Focus', 'simple'),
+(2147483647, 'peugeot', '207', 'gt hdi');
 
 -- --------------------------------------------------------
 
@@ -62,6 +84,14 @@ CREATE TABLE IF NOT EXISTS `piezas` (
   PRIMARY KEY (`num_pedido`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- Volcado de datos para la tabla `piezas`
+--
+
+INSERT INTO `piezas` (`num_pedido`, `ref_pieza`, `cantidad`, `precio`) VALUES
+(36, 3622452, 2, 100),
+(562, 132164, 1, 40);
+
 -- --------------------------------------------------------
 
 --
@@ -74,6 +104,14 @@ CREATE TABLE IF NOT EXISTS `venta` (
   `cif_cliente` int(11) NOT NULL,
   PRIMARY KEY (`num_venta`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Volcado de datos para la tabla `venta`
+--
+
+INSERT INTO `venta` (`num_venta`, `cod_coche`, `cif_cliente`) VALUES
+(1, 555555555, 368549624),
+(2, 362458752, 654892156);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
