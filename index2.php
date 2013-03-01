@@ -6,8 +6,11 @@
 </head>    
 <body>
 <?php
-
-?>
+include_once "lib/orm/EntityManagerFactory.php";
+        $em = EntityManagerFactory::createEntityManager();
+        
+        
+        ?>
     <div id="contenedor1">
         <div id="titulo">    
             <h1>Lista de coches</h1>
@@ -31,8 +34,12 @@
         <br/>
         <div id="coches">
             este apartado ban deddicado a los cochesen venta
+            <?
+            $articulos = $em->getRepository('entities\coches')->findAll();
+            ?>
         </div>
-            
+           
+        
     </div>
            
         
