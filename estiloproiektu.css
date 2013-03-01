@@ -39,3 +39,22 @@ body{
     text-align: center;
 }
 
+#menu{
+    text-decoration:  none;
+    color:#000000;
+    
+}
+
+#menu li {
+    background-color: #FFFFFF;
+    border: 2px solid;
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+    list-style-type: none;
+    margin: 0 0 0 0.5em;
+    padding: 0.5em;
+}
+#bentmenu{
+     margin-left: 277px;
+}
+

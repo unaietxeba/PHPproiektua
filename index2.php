@@ -12,7 +12,7 @@
         <div id="titulo">    
             <h1>Lista de coches</h1>
         </div>  
-        <div id="menu">
+        <div id="bentmenu">
             <ul id="menu">
                 <li>
                 <a href="#coches">Listado de coches</a>
